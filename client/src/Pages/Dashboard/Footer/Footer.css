@@ -1,0 +1,27 @@
+.footer-root {
+    
+}
+
+.footer-nav-each {
+
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 600px) {
+    .footer-root {
+        grid-row: 3/4;
+        grid-column: 1/4;
+
+        display: flex;
+        flex-direction: row;
+
+        /* background-color: #F4F4F4; */
+    }
+    .footer-nav-each {
+        flex: 1;
+    }
+    .footer-nav-each > img {
+        height: 40%;
+        width: 40%;
+    }
+}

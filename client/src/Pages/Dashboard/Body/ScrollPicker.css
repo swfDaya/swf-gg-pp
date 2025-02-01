@@ -1,0 +1,17 @@
+.scroll-picker-root {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+  /* color: white; */
+}
+
+.scroll-picker-item {
+  position: absolute;
+  width: 100%;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #4c4c4c;
+}

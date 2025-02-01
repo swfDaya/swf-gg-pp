@@ -1,0 +1,11 @@
+.home-root {
+    height: 100svh;
+    width: 100vw;
+
+    /* background-color: lightgreen; */
+
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    /* gap: 10px; */
+}

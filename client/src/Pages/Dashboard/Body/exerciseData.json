@@ -1,0 +1,70 @@
+{
+    "exercises": [
+      {
+        "exID": 100000,
+        "sno": 1,
+        "name": "Bicep Curl",
+        "backgroundColor": "#FAD14B",
+        "sets": [
+          { "exID": 100000, "set": 1, "weight": 15, "reps": 12, "highlightColor": "#684505" },
+          { "exID": 100000, "set": 2, "weight": 20, "reps": 10, "highlightColor": "#684505" },
+          { "exID": 100000, "set": 3, "weight": 25, "reps": 8, "highlightColor": "#684505" }
+        ]
+      },
+      {
+        "exID": 100001,
+        "sno": 2,
+        "name": "Squat",
+        "backgroundColor": "#3CD3ED",
+        "sets": [
+          { "exID": 100001, "set": 1, "weight": 100, "reps": 12, "highlightColor": "#045463" },
+          { "exID": 100001, "set": 2, "weight": 110, "reps": 10, "highlightColor": "#045463" },
+          { "exID": 100001, "set": 3, "weight": 120, "reps": 8, "highlightColor": "#045463" }
+        ]
+      },
+      {
+        "exID": 100002,
+        "sno": 3,
+        "name": "Bench Press",
+        "backgroundColor": "#FFAEA5",
+        "sets": [
+          { "exID": 100002, "set": 1, "weight": 135, "reps": 12, "highlightColor": "#892055" },
+          { "exID": 100002, "set": 2, "weight": 145, "reps": 10, "highlightColor": "#892055" },
+          { "exID": 100002, "set": 3, "weight": 155, "reps": 8, "highlightColor": "#892055" }
+        ]
+      },
+      {
+        "exID": 100003,
+        "sno": 4,
+        "name": "Deadlift",
+        "backgroundColor": "#F9551D",
+        "sets": [
+          { "exID": 100003, "set": 1, "weight": 160, "reps": 12, "highlightColor": "#4E0119" },
+          { "exID": 100003, "set": 2, "weight": 170, "reps": 10, "highlightColor": "#4E0119" },
+          { "exID": 100003, "set": 3, "weight": 180, "reps": 8, "highlightColor": "#4E0119" }
+        ]
+      },
+      {
+        "exID": 100004,
+        "sno": 5,
+        "name": "Shoulder Press",
+        "backgroundColor": "#C8AFEF",
+        "sets": [
+          { "exID": 100004, "set": 1, "weight": 40, "reps": 12, "highlightColor": "#68275F" },
+          { "exID": 100004, "set": 2, "weight": 45, "reps": 10, "highlightColor": "#68275F" },
+          { "exID": 100004, "set": 3, "weight": 50, "reps": 8, "highlightColor": "#68275F" }
+        ]
+      },
+      {
+        "exID": 100005,
+        "sno": 6,
+        "name": "Lunges",
+        "backgroundColor": "#B4DC18",
+        "sets": [
+          { "exID": 100005, "set": 1, "weight": 30, "reps": 12, "highlightColor": "#165640" },
+          { "exID": 100005, "set": 2, "weight": 35, "reps": 10, "highlightColor": "#165640" },
+          { "exID": 100005, "set": 3, "weight": 40, "reps": 8, "highlightColor": "#165640" }
+        ]
+      }
+    ]
+  }

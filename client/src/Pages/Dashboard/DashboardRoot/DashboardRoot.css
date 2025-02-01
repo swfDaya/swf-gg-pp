@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.dashboard-root {
+    height: 100svh;
+    width: 100vw;
+
+    display: grid;
+
+    /* background-color: lightblue; */
+}
+
+
+
+/* Small Screens (Phones) */
+@media (max-width: 600px) {
+    .dashboard-root {
+        grid-template-columns: 1fr;
+        /* grid-template-columns: 20px 1fr 20px; */
+        grid-template-rows: 50px 1fr 50px;
+
+        /* background-color: lightgreen; */
+    }
+}

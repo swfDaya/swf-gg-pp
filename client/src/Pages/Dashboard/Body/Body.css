@@ -1,0 +1,277 @@
+.base-body-root {
+    /* background-color: yellow; */
+}
+
+/* .body-nav-each {
+
+} */
+
+.odd-body-root {
+    /* background-color: lightgreen; */
+}
+
+.odd-body-each {
+
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 600px) {
+    .base-body-root {
+        grid-row: 2/3;
+        grid-column: 1/2;
+
+        display: grid;
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: 1fr 10px 1fr;
+    }
+    .odd-body-root {
+        grid-row: 2/3;
+        grid-column: 2/3;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 250px;
+
+        overflow-y: hidden;
+    }
+    /* .body-nav-each {
+        flex: 1;
+    }
+    .body-nav-each > img {
+        height: 40%;
+        width: 40%;
+    } */
+    .body-box-odd {
+        background-color: #F4F4F4;
+
+        border-radius: 20px;
+
+        font-size: 1.25rem;
+        font-weight: 500;
+
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .body-box-even {
+        background-color: #F4F4F4;
+
+        border-radius: 20px;
+
+        font-size: 1.25rem;
+        font-weight: 500;
+
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+
+
+    .odd-body-scroll {
+        /* background-color: lightblue; */
+
+        height: 100%;
+        width: 100%;
+
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+
+        /* display: grid; */
+
+        /* margin-top: 10px; */
+    }
+    .odd-body-scroll-each {
+        /* height: 100vh; Fallback for grid row height */
+        height: 100%; /* Primary height source */
+        scroll-snap-align: start;
+        position: sticky;
+        top: 0;
+        /* grid-row: 1 / 1; All children exist in the same grid row */
+
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        background-color: black;
+        /* background-color: #494949; */
+    }
+    .odd-body-scroll-each-name {
+        height: 60px;
+        width: 100%;
+
+        /* background-color: #494949; */
+        color: white;
+
+        font-size: 1.25rem;
+        font-weight: bold;
+
+        /* border-radius: 20px; */
+    }
+    .odd-body-scroll-each-content {
+        height: 100%;
+        width: 100%;
+
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        /* background-color: lightskyblue; */
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        /* grid-template-rows: 60px 1fr 1fr 1fr 1fr; */
+    }
+    .odd-body-scroll-each-content-header {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+
+        /* background-color: lightpink; */
+    }
+    .odd-body-scroll-each-content-header > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-weight: 400;
+        font-style: italic;
+    }
+    .odd-body-scroll-each-content-each {
+        /* flex: 1; */
+        /* background-color: tomato; */
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 20px 1fr 1fr 1fr 20px;
+        /* grid-template-columns: repeat(3, 1fr); */
+
+        font-weight: 600;
+    }
+    .odd-body-scroll-each-content-each > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    .odd-body-control {
+        /* background-color: black; */
+
+        display: grid;
+        grid-template-rows: 1fr 75px;
+        grid-template-columns: 1fr;
+    }
+    .odd-body-control-scroll-parent {
+        background-color: black;
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 40px 1fr 60px 1fr 40px;
+
+        overflow: hidden;
+
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .odd-body-control-scroll-weights {
+        /* height: 100%;
+        width: 100%; */
+
+        /* overflow: hidden; */
+
+        /* background-color: red; */
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .odd-body-control-scroll-reps {
+        /* height: 100%;
+        width: 100%; */
+
+        /* overflow: hidden; */
+
+        /* background-color: green; */
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .odd-body-control-scroll-icon {
+        /* background-color: lightseagreen; */
+    }
+    .odd-body-control-button-parent {
+        background-color: black;
+    }
+    .odd-body-control-button-parent > div {
+        height: 100%;
+        width: 100%;
+
+        background-color: lightskyblue;
+
+        display: grid;
+        grid-template-rows: 12px 1fr 12px;
+        grid-template-columns: 12px 1fr 12px 1fr 12px;
+
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .odd-body-control-button-reset {
+        grid-row: 2/3;
+        grid-column: 2/3;
+
+        background-color: lightcoral;
+
+        border-radius: 10px;
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: 600;
+    }
+    .odd-body-control-button-save {
+        grid-row: 2/3;
+        grid-column: 4/5;
+
+        background-color: lightcoral;
+
+        border-radius: 10px;
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+
+
+    .odd-body-each {
+        height: 200px;
+        width: 100%;
+
+        background-color: #F4F4F4;
+
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+    .odd-body-each-header {
+        height: 50px;
+        width: 100%;
+
+        /* display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr); */
+
+        /* background-color: lightcoral; */
+
+        font-weight: bold;
+        color: white;
+    }
+    .odd-body-each-header > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .odd-body-each-row {
+        height: 50px;
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 5px;
+    }
+}
